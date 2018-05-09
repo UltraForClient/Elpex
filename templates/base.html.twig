@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+    <title>Elpex</title>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/jquery-1.7.1.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/lavalamp.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/cufon-yui.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/Calibri_700.font.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/jquery-1.7.1.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/pelzacz.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/jquery-easing-1.3.pack.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/jquery-easing-compatibility.1.2.pack.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/slideshow.js') }}" type="text/javascript"></script>
+    <script type="text/javascript">
+        Cufon.replace('#naglowek'); // Works without a selector engine
+        Cufon.replace('#podglowek'); // Works without a selector engine
+        Cufon.replace('#podglowek2'); // Works without a selector engine
+        Cufon.replace('#naglowek2'); // Works without a selector engine</script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/default' ~ default ~ '.css') }}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/nivo-slider.css') }}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/pelzacz.css') }}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slideshow.css') }}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/strona.css') }}" media="screen"/>
+    <style>
+        .theme-default .nivoSlider {
+            background:#fff url('{{ asset('assets/img/loading.gif') }}') no-repeat 50% 50%;
+        }
+
+        .theme-default .nivo-controlNav a{
+        {% if default == '2' %}
+            background:url('{{ asset('assets/img/bullets2.png') }}') no-repeat;
+        {% else %}
+            background:url('{{ asset('assets/img/bullets.png') }}') no-repeat;
+        {% endif %}
+        }
+
+        body {
+            background: url('{{ asset('assets/img/tlo.jpg') }}');
+        }
+
+        .gora .menu {
+            background: url('{{ asset('assets/img/menu.jpg') }}') repeat-y right;
+        }
+
+        .glowna ul, .prawo_1 ul {
+            list-style-image: url('{{ asset('assets/img/li.png') }}');
+        }
+
+        .stopka {
+            background: url('{{ asset('assets/img/pasek.png') }}') repeat-x;
+        }
+    </style>
+</head>
+    <body id="{{ bodyId }}">
+        <div id="pasek">
+            <div id="gora">
+                <div class="gora">
+                    <div class="logo">
+                        <a href="{{ url('home') }}"><img src="{{ asset('assets/img/logo.jpg') }}" border="0" alt="none"/></a>
+                    </div>
+                    <div class="login">
+                        <a href="login.asp">Zaloguj się</a>
+                    </div>
+                    <div class="menu" style="clear: none">
+                        <div class="lavalamp">
+                            <ul>
+                                <li class="active"></li>
+                                <li><a href="{{ url('home') }}" id="index_button">START</a></li>
+                                <li><a href="{{ url('about') }}" id="o_firmie_button">O FIRMIE</a></li>
+                                <li><a href="{{ url('offers') }}" id="oferta_button">OFERTA</a></li>
+                                <li><a href="{{ url('references') }}" id="kontakt_button">REFERENCJE</a></li>
+                                <li><a href="{{ url('contact') }}" id="kontakt_button">KONTAKT</a></li>
+                            </ul>
+                            <div class="floatr"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block body %}{% endblock %}
+        <div class="stopka">
+            <div class="menu">
+                <p><b>Elpex</b> <font id="szary">Sylwester Galus</font></p>
+                Przyjmo, ul. Dolna 2<br/>
+                26-085 Miedziana Góra<br/><br/>
+                <p><b>Biuro handlowe</b></p>
+                ul. Mielczarskiego 121<br/>
+                25-611 Kielce<br/><br/>
+            </div>
+            <div class="menu">
+                <p><b>Szybki kontakt</b></p>
+                tel/fax: +48 41 346 43 32<br/>
+                kom: + 48 512 180 277<br/><br/>
+                <a href="{{ url('contact') }}">Napisz do nas &raquo;</a><br/>
+                <a href="{{ url('contact') }}">Znajdź nas na mapie &raquo;</a>
+            </div>
+            <div class="menu">
+                <p><b>Poznaj nas</b></p>
+                <a href="{{ url('about') }}" class="o_firmie2">Informacje o firmie &raquo;</a><br/>
+                <a href="{{ url('offers') }}" class="oferta2">Oferowane usługi &raquo;</a><br/>
+                <a href="{{ url('references') }}" class="referencje2">Zaufali nam &raquo;</a>
+            </div>
+            <div class="copy">
+                &copy; 2013 Elpex. Wszelkie prawa zastrzeżone.<br/>
+                Projekt i kodowanie: <a href="http://www.pjw.com" target="_blank">P.J.W.</a>
+
+            </div>
+        </div>
+        {% block js %}{% endblock %}
+    </body>
+</html>

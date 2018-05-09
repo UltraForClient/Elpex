@@ -1,0 +1,490 @@
+body { 
+margin: 0px auto;
+padding: 0px;
+}
+
+form, input, select, textarea {
+margin:0px;
+padding:0px;
+color:#000000;
+}
+
+h2 {
+padding: 0px;
+margin: 0px;
+}
+
+#pasek {
+width: 100%; 
+height: 80px;
+margin: 0px 0px 30px 0px;
+background: #b30000;
+}
+
+#gora {
+width: 850px; 
+height: 80px;
+margin: 0px auto;
+}
+
+.gora .logo {
+width: 184px;
+float: left;
+overflow: hidden;
+}
+
+.gora .login {
+float: right;
+overflow: hidden;
+background-color: #6a6a6a;
+padding: 6px;
+font-family: tahoma;
+font-size: 11px;
+}
+
+.gora .login a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.gora .login a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+
+.gora .menu {
+clear: both;
+width: 650px;
+height: 26px;
+float: right;
+margin: 29px 0px 0px 0px;
+font-family: tahoma;
+font-size: 13px;
+text-align: right;
+color: #ffffff;
+}
+
+.lavalamp {
+position: relative;
+padding: 5px 5px 10px 16px;
+height: 13px;
+margin: 0px 0px 0px 213px;
+}
+
+.lavalamp a {
+text-decoration: none;
+color: #ffffff;
+}
+
+.lavalamp #index_button, #o_firmie_button, #oferta_button, #referencje_button, #kontakt_button, a:hover {
+text-decoration: none;
+background: none;
+}
+
+.lavalamp a:hover, #index #index_button, #o_firmie #o_firmie_button, #oferta #oferta_button, #referencje #referencje_button, #kontakt #kontakt_button {
+text-decoration: none;
+background: #b30000;
+padding: 5px 15px 5px 15px;
+}
+
+.lavalamp ul {
+margin: 0;
+padding: 0;
+z-index: 300;
+position: absolute;
+}
+
+.lavalamp ul li {
+list-style: none;
+float:left;
+text-align: center;
+}
+
+.lavalamp ul li a {
+padding: 0px 15px 0px 15px;
+text-align: center;
+}
+
+.floatr  {
+position: absolute;
+top: 0px;
+z-index: 50;
+width: 20px;
+height: 26px;
+background : #b30000;
+-webkit-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+}
+
+.migawka {
+width: 850px; 
+height: 270px;
+margin: 0px auto;
+margin-bottom: 30px;
+position: static;
+}
+
+.tytul {
+width: 850px; 
+margin: 0px auto;
+padding: 0px;
+}
+
+.tekst {
+width: 500px; 
+margin: 0px;
+background: #ffffff;
+padding: 30px 0px 30px 30px;
+border-bottom: 1px solid #e40001;
+font-family: tahoma;
+font-size: 15px;
+text-align: left;
+color: #e40001;
+}
+
+.srodek {
+width: 820px; 
+margin: 0px auto;
+margin-bottom: 30px;
+padding: 30px 0px 0px 30px;
+background: #ffffff; 
+}
+
+.glowna {
+width: 500px; 
+float: left;
+}
+
+.glowna .naglowek2 {
+width: 500px;
+font-family: tahoma;
+font-size: 11px;
+text-align: left;
+font-weight: bold;
+color: #686868;
+border-bottom: 1px solid #eaeaea;
+padding: 0px 0px 30px 0px;
+margin: 0px;
+}
+
+.glowna .naglowek {
+width: 500px;
+font-family: tahoma;
+font-size: 15px;
+text-align: left;
+color: #e40001;
+border-bottom: 1px solid #eaeaea;
+padding: 30px 0px 30px 0px;
+margin: 0px;
+}
+
+.glowna p {
+width: 470px;
+font-family: tahoma;
+font-size: 11px;
+text-align: justify;
+color: #686868;
+padding: 30px 0px 30px 0px;
+margin: 0px;
+line-height: 15px;
+}
+
+.glowna p.wstep {
+width: 470px;
+font-family: tahoma;
+font-size: 11px;
+text-align: justify;
+color: #686868;
+padding: 0px 0px 30px 0px;
+margin: 0px;
+line-height: 15px;
+}
+
+.glowna ul {
+font-family: tahoma;
+font-size: 11px;
+text-align: justify;
+color: #686868;
+padding: 30px 30px 30px 20px;
+margin: 0px;
+}
+
+.glowna .pod_ul {
+list-style: square;
+font-family: tahoma;
+font-size: 11px;
+text-align: justify;
+color: #000000;
+padding: 5px 0px 0px 20px;
+margin: 0px;
+}
+
+.glowna a {
+color: #e40001;
+text-decoration: none;
+}
+
+.glowna a:hover {
+color: #ff1718;
+text-decoration: none;
+}
+
+.glowna .podglowek {
+width: 500px;
+font-family: tahoma;
+font-size: 15px;
+text-align: left;
+color: #e40001;
+border-top: 1px solid #eaeaea;
+padding: 30px 0px 0px 0px;
+margin: 0px;
+}
+
+.wpis {
+width: 200px;
+background: #ffffff;
+border: 1px solid #e40001;
+margin-bottom: 5px;
+font-family: tahoma;
+font-size: 11px;
+padding: 3px;
+}
+
+.wiadomosc {
+width: 460px;
+height: 300px;
+background: #ffffff;
+border: 1px solid #e40001;
+margin-bottom: 5px;
+font-family: tahoma;
+font-size: 11px;
+padding: 3px;
+}
+
+.button {
+color: #ffffff;
+text-decoration: none;
+padding: 5px;
+background: #e40001;
+border: 0px;
+font-family: tahoma;
+font-size: 11px;
+color: #ffffff;
+margin: 0px;
+cursor: pointer;
+width: 100px;
+}
+
+.prawo_zauf {
+width: 289px; 
+background: #ffffff; 
+float: left;
+font-family: calibri;
+font-size: 14px;
+text-align: left;
+color: #000000;
+margin: 0px;
+padding: 30px 0px 30px 30px;
+border-left: 1px dashed #eaeaea;
+border-bottom: 1px dashed #eaeaea;
+}
+
+.prawo_zauf a {
+color: #000000;
+text-decoration: none;
+}
+
+.prawo_zauf a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+.prawo_1 {
+width: 320px; 
+background: #eaeaea; 
+float: left;
+}
+
+.prawo_1 p {
+width: 290px; 
+font-family: calibri;
+font-size: 14px;
+text-align: left;
+color: #000000;
+margin: 0px;
+padding: 30px 0px 0px 30px;
+}
+
+.prawo_1 a {
+color: #000000;
+text-decoration: none;
+}
+
+.prawo_1 a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+.prawo_1 ul  {
+font-family: calibri;
+font-size: 12px;
+line-height: 15px;
+text-align: left;
+color: #242424;
+padding: 10px 30px 0px 50px;
+margin: 0px;
+}
+
+.prawo_kon {
+width: 260px; 
+padding: 30px;
+background: #f9f9f9; 
+float: left;
+font-family: calibri;
+font-size: 15px;
+line-height: 15px;
+text-align: left;
+color: #242424;
+border-top: 1px dashed #cccccc;
+}
+
+.prawo_kon p {
+margin: 0px;
+padding: 10px 0px 0px 0px;
+font-family: calibri;
+font-size: 12px;
+text-align: left;
+color: #5d5d5d;
+}
+
+.prawo_2 {
+width: 260px; 
+padding: 30px;
+background: #f9f9f9; 
+float: left;
+font-family: calibri;
+font-size: 15px;
+line-height: 15px;
+text-align: left;
+color: #242424;
+}
+
+.prawo_2 p {
+margin: 0px;
+padding: 10px 0px 0px 0px;
+font-family: calibri;
+font-size: 12px;
+text-align: left;
+color: #5d5d5d;
+}
+
+.prawo_2 a {
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+}
+
+.prawo_2 a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+.prawo_3 {
+width: 260px; 
+padding: 30px;
+background: #f9f9f9; 
+float: left;
+font-family: calibri;
+border-top: 1px dashed #cccccc;
+font-size: 12px;
+line-height: 15px;
+text-align: left;
+color: #5d5d5d;
+}
+
+.prawo_3 a {
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+}
+
+.prawo_3 a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+.dojazd {
+margin: 0px;
+padding: 0px;
+font-family: calibri;
+font-size: 12px;
+text-align: left;
+color: #5d5d5d;
+width: 100px;
+}
+
+#tel {
+color: #e40001;
+}
+
+#czarny {
+color: #000000;
+font-weight: bold;
+}
+
+.stopka {
+width: 850px; 
+margin: 0px auto;
+padding: 28px 0px 0px 0px;
+font-family: tahoma;
+font-size: 11px;
+text-align: left;
+color: #444444;
+line-height: 14px;
+position: static;
+}
+
+.stopka p {
+font-size: 12px;
+font-weight: normal;
+margin: 0px 0px 3px 0px;
+}
+
+.stopka .menu {
+width: 184px;
+height: 80px;
+float: left;
+}
+
+.stopka .menu a {
+color: #444444;
+text-decoration: none;
+}
+
+.stopka .menu a:hover, #index .index2, #o_firmie .o_firmie2, #oferta .oferta2, #referencje .referencje2 {
+color: #e40001;
+text-decoration: none;
+}
+
+#szary {
+color: #848484;
+font-weight: normal;
+}
+
+.stopka .copy {
+width: 298px;
+height: 80px;
+float: left;
+text-align: right;
+color: #848484;
+}
+
+.stopka .copy a {
+color: #848484;
+text-decoration: none;
+}
+
+.stopka .copy a:hover {
+color: #848484;
+text-decoration: underline;
+}

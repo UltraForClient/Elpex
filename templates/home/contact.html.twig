@@ -1,0 +1,137 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="tytul">
+        <div class="tekst">
+            <h2 id="tekst">Kontakt &raquo;</h2>
+        </div>
+
+    </div>
+    <div class="srodek">
+        <div class="glowna">
+
+
+            <div class="tabs">
+                <ul>
+                    <li class="podmenu"><a class="selected" href="#first">Mapa</a></li>
+                    <li class="podmenu"><a href="#second">Formularz kontaktowy</a></li>
+                </ul>
+                <div id="first" class="content active">
+                    <body onload="mapaStart()">
+                    <script type="text/javascript">
+                        <!--
+                        var mapa;
+
+                        // obiekt globalny
+
+                        function dodajMarker(opcjeMarkera) {
+                            opcjeMarkera.map = mapa;
+                            var marker = new google.maps.Marker(opcjeMarkera);
+                        }
+
+                        function mapaStart() {
+                            var wspolrzedne = new google.maps.LatLng(50.935065470134774, 20.5718994140625);
+                            var opcjeMapy = {
+                                zoom: 11,
+                                center: wspolrzedne,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy);
+
+// wspólne cechy ikon
+
+                            var rozmiar = new google.maps.Size(80, 50);
+                            var rozmiar_cien = new google.maps.Size(120, 50);
+                            var punkt_startowy = new google.maps.Point(0, 0);
+                            var punkt_zaczepienia = new google.maps.Point(16, 16);
+
+// ikonki
+                            var ikona1 = new google.maps.MarkerImage("{{ asset('assets/img/logo_mapa.png') }}", rozmiar, punkt_startowy, punkt_zaczepienia);
+                            var ikona2 = new google.maps.MarkerImage("{{ asset('assets/img/logo_mapa.png') }}", rozmiar, punkt_startowy, punkt_zaczepienia);
+
+
+                            dodajMarker({
+                                position: new google.maps.LatLng(50.87717962596785, 20.61450898647308),
+                                title: 'Biuro handlowe',
+                                icon: ikona1
+                            });
+                            dodajMarker({
+                                position: new google.maps.LatLng(50.98178974645286, 20.51842153072357),
+                                title: 'Siedziba główna',
+                                icon: ikona2
+                            });
+
+                        }
+
+                        -->
+                    </script>
+
+                    <div id='mapka' style='width: 468px; height: 500px; border: 1px solid #e40001; background: #ffffff;'>
+                        <!-- tu bedzie mapa -->
+                    </div>
+                </div>
+                <div id="second" class="content inactive">
+                    <p class="wstep">
+                        Dziękujemy za zainteresowanie naszymi usługami.<br/><br/>
+                        <font id="tel">Uprzejmie prosimy o dokładne wypełnienie wszystkich pól.</font>
+                    </p>
+
+                    <div>
+                        <!-- <form action="mailto:elpex@op.pl" method="post" enctype="text/plain" onsubmit="if (sprawdz(this)) return true; return false;"> -->
+                        <form action="kontakt.asp" method="post" onsubmit="if (sprawdz(this)) return true; return false;">
+
+                            <input type="text" name="Dane Firmy" class="wpis" placeholder="Imię i nazwisko / Firma"/><br/>
+                            <input type="text" name="Email" class="wpis" placeholder="Adres e-mail"/><br/>
+                            <input type="text" name="Telefon" class="wpis" placeholder="Numer telefonu"/><br/>
+                            <textarea name="Treć zapytania" class="wiadomosc"
+                                      placeholder="Treść wiadomości"></textarea><br/>
+                            <input type="submit" class="button" value="Wyślij"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="prawo_2">
+            <b>Elpex</b> Sylwester Galus
+            <p>
+                Przyjmo, ul. Dolna 2<br/>
+                26-085 Miedziana Góra<br/><br/>
+                NIP: 959 123 39 17<br/><br/>
+                tel/fax: +48 <font id="tel">&nbsp;<b>41 346 43 32</b></font><br/>
+                <big>&nbsp;&nbsp;&nbsp;</big>
+                <small>&nbsp;&nbsp;</small>
+                kom: +48 <font id="tel">&nbsp;<b>512 180 277</b></font><br/>
+                <small>&nbsp;&nbsp;</small>
+                e-mail: <font id="tel">&nbsp;<b>elpex@op.pl</b></font>
+            </p>
+        </div>
+
+        <div class="prawo_kon">
+            <b>Biuro handlowe</b>
+            <p>
+                ul. Mielczarskiego 121<br/>
+                25-611 Kielce
+            </p>
+        </div>
+
+        <div class="prawo_1">
+            <p>
+                <a href="o_firmie.htm"><b>Poznaj nas &raquo;</b></a>
+            <ul>
+                <li>jesteśmy firmą z ponad dwunastoletnim doświadczeniem na rynku</li>
+                <li>spejalizujemy się w montażu intalacji elektrycznych zarówno na małych jak i dużych budowach</li>
+                <li>posiadamy doświadczenie w obsłudze kilkumilionowych inwestycji</li>
+            </ul>
+            </p>
+        </div>
+        <br style="clear: both;"/>
+
+    </div>
+
+    <div class="prawo_1">
+    </div>
+
+    </div>
+    </div>
+{% endblock %}
