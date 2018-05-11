@@ -1,0 +1,12 @@
+easy_admin:
+    entities:
+        Reference:
+            label: 'Referencje'
+            class: App\Entity\Reference
+            form:
+                fields:
+                    - { property: 'imageFile', type: 'vich_image', template: 'vich_uploader_image.html.twig' }
+                    - { property: 'title', type: 'text' }
+                    - { property: 'description', type: 'text' }
+                    - { property: 'number', type: 'integer' }
+                    - { property: 'subNumber', type: 'integer' }

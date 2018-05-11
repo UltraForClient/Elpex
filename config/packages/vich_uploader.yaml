@@ -1,0 +1,7 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        reference_images:
+            uri_prefix: '%app.path.images%/reference'
+            upload_destination: '%kernel.root_dir%/../public/assets/uploads/reference'

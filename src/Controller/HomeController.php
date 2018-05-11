@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Reference;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -13,6 +14,7 @@ class HomeController extends Controller
      */
     public function index(): Response
     {
+
         return $this->render('home/index.html.twig', [
             'bodyId' => 'index',
             'default' => ''
@@ -46,9 +48,15 @@ class HomeController extends Controller
      */
     public function references(): Response
     {
+        $em = $this->getDoctrine()->getManager();
+
+        $references = $em->getRepository(Reference::class)->findAll();
+
+
         return $this->render('home/references.html.twig', [
             'bodyId' => 'referencje',
-            'default' => '2'
+            'default' => '2',
+            'references' => $references
         ]);
     }
 
