@@ -16,8 +16,7 @@ class HomeController extends Controller
     {
 
         return $this->render('home/index.html.twig', [
-            'bodyId' => 'index',
-            'default' => ''
+            'title' => '',
         ]);
     }
 
@@ -27,8 +26,7 @@ class HomeController extends Controller
     public function about(): Response
     {
         return $this->render('home/about.html.twig', [
-            'bodyId' => 'o_firmie',
-            'default' => '2'
+            'title' => 'O firmie',
         ]);
     }
 
@@ -38,8 +36,7 @@ class HomeController extends Controller
     public function offers(): Response
     {
         return $this->render('home/offers.html.twig', [
-            'bodyId' => 'oferta',
-            'default' => '2'
+            'title' => 'Oferty',
         ]);
     }
 
@@ -54,8 +51,7 @@ class HomeController extends Controller
 
 
         return $this->render('home/references.html.twig', [
-            'bodyId' => 'referencje',
-            'default' => '2',
+            'title' => 'Referencje',
             'references' => $references
         ]);
     }
@@ -66,8 +62,7 @@ class HomeController extends Controller
     public function contact(): Response
     {
         return $this->render('home/contact.html.twig', [
-            'bodyId' => 'kontakt',
-            'default' => '2'
+            'title' => 'Kontakt',
         ]);
     }
 }

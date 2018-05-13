@@ -1,0 +1,55 @@
+.footer {
+    margin: 0 auto;
+    font-size: 11px;
+    color: #444444;
+    line-height: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__section {
+    margin-right: 15px;
+}
+
+.footer__block {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+
+.footer__block > span {
+    display: block;
+}
+
+.footer__section a {
+    color: #444444;
+    display: block;
+}
+
+.footer__section a:hover, #index .index2, #o_firmie .o_firmie2, #oferta .oferta2, #referencje .referencje2 {
+    color: #e40001;
+    text-decoration: none;
+}
+
+.footer .copy {
+    color: #848484;
+}
+
+.footer .copy a {
+    color: #848484;
+    text-decoration: none;
+}
+
+.footer .copy a:hover {
+    color: #848484;
+    text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        width: 80vw;
+    }
+}

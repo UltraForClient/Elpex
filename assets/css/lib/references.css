@@ -1,0 +1,29 @@
+.reference__img {
+    display: none;
+}
+
+.reference__text {
+    display: none;
+}
+
+.reference-active {
+    display: block;
+}
+
+.reference-button {
+    margin: 5px;
+    border: 1px solid #e40001;
+    width: 10%;
+    height: 30px;
+    color: #e40001;
+    transition: all .2s linear;
+}
+
+.reference-button:hover, .reference-button-active {
+    color: #fff;
+    background-color: #e40001;
+}
+
+.reference__section__text {
+    height: 40vh;
+}

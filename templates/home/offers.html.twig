@@ -1,95 +1,36 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="tytul">
-        <div class="tekst">
-            <h2 id="tekst">Oferta</h2>
-        </div>
-    </div>
-    <div class="srodek">
-        <div class="glowna">
-            <p class="wstep">
-                Firma Elpex oferuje usługi z zakresu profesjonalnego wykonawstwa robót elektroenergetycznych oraz instalacji
-                teletechnicznych w systemie EIB. W ramach naszych usług zajmujemy się również projektowaniem sieci
-                elektroenergetycznych, ze szczególnym uwzględnieniem poniższych komponentów:
-            </p>
-            <p class="naglowek2">
-                SIECI ELEKTRYCZNE
-            </p>
-            <ul>
-                <li>Instalacje WLZ</li>
-                <li>Instalacje oświetlenia wewnętrznego</li>
-                <li>Instalacje owietlenia ulicznego</li>
-                <li>Montaż rozdzielni elektrycznych niskiego i średniego napięcia</li>
-                <li>Instalacje odgromowe i wyrównawcze</li>
-                <li>Roboty ziemne dla robót elektroenergetycznych</li>
-                <li>Kompleksowe projektowanie sieci</li>
-                <li>Pomiary elektryczne</li>
-            </ul>
-            <p class="naglowek2">
-                INSTALACJE TELETECHNICZNE
-            </p>
-            <ul>
-                <li>Instalacje inteligentnego budynku EIB</li>
-                <li>Instalacje oddymiania</li>
-                <li>Instalacje SAP</li>
-                <li>Instalacje przyzywowe</li>
-                <li>Instalacje domofonowe</li>
-                <li>Instalacje telewizji przemysłowej CCTV</li>
-                <li>Instalacje sygnalizacji włamania i napadu</li>
-                <li>Instalacje sieci strukturalnych</li>
-                <li>Instalacje kontroli dostępu</li>
-            </ul>
-
-        </div>
-        <div class="prawo_2">
-            <b>Skontaktuj się z nami</b>
-            <p>
-                Wypełnij <a href="kontakt.htm">formularz zapytania ofertowego</a> lub skontaktuj się z nami
-                bezpośrednio:<br/><br/>
-                <font id="tel">tel/fax:</font> +48 <big><big><big><font id="tel">&nbsp;41 346 43 32</font></big></big></big><br/>
-                <big>&nbsp;&nbsp;&nbsp;</big>
-                <small>&nbsp;&nbsp;</small>
-                <font id="tel">kom:</font> +48 <big><big><big><font id="tel">&nbsp;512 180 277</font></big></big></big>
-            </p>
-        </div>
-
-        <div class="prawo_3">
-            Zapraszamy również do odwiedzenia naszego biura mieszczącego się w <font id="czarny">Kielcach</font>, ulica
-            <font id="czarny">Romualda Mielczarskiego 121</font> (zachodnia strona dworca kolejowego), II piętro, lokal 214.<br/><br/>
-            <a href="kontakt.htm">Zobacz mapę dojazdu &raquo;</a>
-        </div>
-
-        <div class="prawo_zauf">
-            <a href="referencje.htm"><b>Zaufali nam &raquo;</b></a>
-
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <img src="{{ asset('assets/img/zmitex.jpg') }}" data-thumb="{{ asset('assets/img/zmitex.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zpko.jpg') }}" data-thumb="{{ asset('assets/img/zpko.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zdorbud.jpg') }}" data-thumb="{{ asset('assets/img/zdorbud.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zmzb.jpg') }}" data-thumb="{{ asset('assets/img/zmzb.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zlysogory.jpg') }}" data-thumb="{{ asset('assets/img/zlysogory.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zgeopark.jpg') }}" data-thumb="{{ asset('assets/img/zgeopark.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zpolitechnika.jpg') }}" data-thumb="{{ asset('assets/img/zpolitechnika.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zskanska.jpg') }}" data-thumb="{{ asset('assets/img/zskanska.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/zmzd.jpg') }}" data-thumb="{{ asset('assets/img/zmzd.jpg') }}" alt="" data-transition="fold"/>
-                    <img src="{{ asset('assets/img/ztrakt.jpg') }}" data-thumb="{{ asset('assets/img/ztrakt.jpg') }}" alt="" data-transition="fold"/>
-                </div>
-            </div>
-        </div>
-        <br style="clear: both;"/>
-        <script type="text/javascript">
-            $(window).load(function () {
-                $('#slider').nivoSlider();
-            });
-        </script>
-
-    </div>
-
-    <div class="prawo_1">
-    </div>
-
-    </div>
-    </div>
+    <p class="text">
+        Firma Elpex oferuje usługi z zakresu profesjonalnego wykonawstwa robót elektroenergetycznych oraz instalacji
+        teletechnicznych w systemie EIB. W ramach naszych usług zajmujemy się również projektowaniem sieci
+        elektroenergetycznych, ze szczególnym uwzględnieniem poniższych komponentów:
+    </p>
+    <p class="subtitle2">
+        SIECI ELEKTRYCZNE
+    </p>
+    <ul>
+        <li>Instalacje WLZ</li>
+        <li>Instalacje oświetlenia wewnętrznego</li>
+        <li>Instalacje oświetlenia ulicznego</li>
+        <li>Montaż rozdzielni elektrycznych niskiego i średniego napięcia</li>
+        <li>Instalacje odgromowe i wyrównawcze</li>
+        <li>Roboty ziemne dla robót elektroenergetycznych</li>
+        <li>Kompleksowe projektowanie sieci</li>
+        <li>Pomiary elektryczne</li>
+    </ul>
+    <p class="subtitle2">
+        INSTALACJE TELETECHNICZNE
+    </p>
+    <ul>
+        <li>Instalacje inteligentnego budynku EIB</li>
+        <li>Instalacje oddymiania</li>
+        <li>Instalacje SAP</li>
+        <li>Instalacje przyzywowe</li>
+        <li>Instalacje domofonowe</li>
+        <li>Instalacje telewizji przemysłowej CCTV</li>
+        <li>Instalacje sygnalizacji włamania i napadu</li>
+        <li>Instalacje sieci strukturalnych</li>
+        <li>Instalacje kontroli dostępu</li>
+    </ul>
 {% endblock %}

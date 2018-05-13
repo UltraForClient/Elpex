@@ -1,0 +1,88 @@
+.header {
+    width: 100%;
+    background: #b30000;
+}
+
+.logo {
+    margin: 0 auto;
+    font-size: 0;
+    width: 60%;
+}
+
+.nav {
+    height: 26px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.nav__list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.nav__item {
+    width: 20%;
+    font-size: 11px;
+}
+
+.nav__item a {
+    display: flex;
+    height: 26px;
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.nav a:hover {
+    background: #b30000;
+
+}
+
+#index #index_button, #o_firmie #o_firmie_button, #oferta #oferta_button, #referencje #referencje_button, #kontakt #kontakt_button {
+    background: #b30000;
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5vw;
+        margin: 0 0 30px;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .nav {
+        width: 75%;
+    }
+
+    .nav__item {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .nav__item a {
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding: 0 15vw;
+    }
+
+    .nav {
+        width: 50%;
+    }
+
+    .logo {
+        margin: 0;
+    }
+}

@@ -1,0 +1,19 @@
+.index__slider .theme-default .nivo-controlNav {
+    margin: -40px 0 0 60vw;
+    position: relative;
+    z-index: 5;
+}
+.index__slider .theme-default .nivo-controlNav a {
+    display: inline-block;
+    width: 20px;
+    text-indent: -9999px;
+}
+.index__slider .theme-default .nivo-controlNav a.active {
+    background-position:0 -22px;
+}
+
+@media (min-width: 1024px) {
+    .index__slider, #index__slider {
+        height: 270px;
+    }
+}

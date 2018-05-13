@@ -1,0 +1,164 @@
+@import './lib/header.css';
+@import './lib/aside.css';
+@import './lib/footer.css';
+
+@import './lib/index.css';
+@import './lib/about.css';
+@import './lib/references.css';
+@import './lib/contact.css';
+
+@import './lib/nivo-slider.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+form, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.title {
+    background: #ffffff;
+    padding: 30px 0 30px 30px;
+    border-bottom: 1px solid #e40001;
+    color: #e40001;
+}
+
+.main__content {
+    margin: 0 auto 30px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.main .title {
+    color: #e40001;
+    border-bottom: 1px solid #eaeaea;
+    padding: 30px 0 30px 0;
+    margin: 0;
+}
+
+.main .subtitle {
+    font-size: 15px;
+    text-align: left;
+    color: #e40001;
+    border-top: 1px solid #eaeaea;
+    padding: 30px 0 0 0;
+    margin: 0;
+}
+
+.main .subtitle2 {
+    font-size: 11px;
+    text-align: left;
+    font-weight: bold;
+    color: #686868;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+
+.main p {
+    text-align: justify;
+    color: #686868;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    line-height: 18px;
+}
+
+.main .text {
+    text-align: justify;
+    color: #686868;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+
+.main ul {
+    text-align: justify;
+    color: #686868;
+    padding: 10px 0 25px 20px;
+    margin: 0;
+}
+
+.about__list ul {
+    list-style: square;
+    font-size: 11px;
+    text-align: justify;
+    color: #000000;
+    padding: 5px 0 0 20px;
+    margin: 0;
+}
+
+.main a {
+    color: #e40001;
+    text-decoration: none;
+}
+
+.main a:hover {
+    color: #ff1718;
+    text-decoration: none;
+}
+
+.red {
+    color: #e40001;
+}
+
+.black {
+    color: #000000;
+    font-weight: bold;
+}
+
+.gray {
+    color: #848484;
+    font-weight: normal;
+}
+
+@media (min-width: 786px) {
+    .main__content {
+        display: flex;
+        padding: 30px 0 0 30px;
+    }
+
+    .container {
+        padding: 0 5vw;
+    }
+
+    .main {
+        width: 65%;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    .container {
+        padding: 0 15vw;
+    }
+}

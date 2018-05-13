@@ -1,90 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <div class="migawka">
+{% block title %}
+    <div class="index__slider">
         <div class="slider-wrapper theme-default">
-            <div id="slider" class="nivoSlider">
-                <img src="{{ asset('assets/img/slide1.jpg') }}" data-thumb="{{ asset('assets/img/slide1.jpg') }}" alt="" data-transition="boxRandom"/>
-                <img src="{{ asset('assets/img/slide4.jpg') }}" data-thumb="{{ asset('assets/img/slide4.jpg') }}" alt="" data-transition="boxRandom"/>
-                <img src="{{ asset('assets/img/slide2.jpg') }}" data-thumb="{{ asset('assets/img/slide2.jpg') }}" alt="" data-transition="boxRandom"/>
-                <img src="{{ asset('assets/img/slide3.jpg') }}" data-thumb="{{ asset('assets/img/slide3.jpg') }}" alt="" data-transition="boxRandom"/>
+            <div id="index__slider" class="nivoSlider">
+                <img src="{{ asset('assets/img/slide1.jpg') }}" data-thumb="{{ asset('assets/img/slide1.jpg') }}" alt=""
+                     data-transition="boxRandom"/>
+                <img src="{{ asset('assets/img/slide4.jpg') }}" data-thumb="{{ asset('assets/img/slide4.jpg') }}" alt=""
+                     data-transition="boxRandom"/>
+                <img src="{{ asset('assets/img/slide2.jpg') }}" data-thumb="{{ asset('assets/img/slide2.jpg') }}" alt=""
+                     data-transition="boxRandom"/>
+                <img src="{{ asset('assets/img/slide3.jpg') }}" data-thumb="{{ asset('assets/img/slide3.jpg') }}" alt=""
+                     data-transition="boxRandom"/>
             </div>
         </div>
     </div>
+{% endblock %}
+{% block body %}
+    <h2 class="title">ELPEX - wszędzie tam, gdzie potrzebujesz energii.</h2>
+    <p>Firma Elpex rozpoczęła swoją działalność w 2001 roku i od tego czasu zajmuje się profesjonalnym wykonawstwem robót elektrycznych i elektroenergetycznych w obiektach mieszkalnych, przemysłowych, handlowych i pozostałych budynkach użyteczności publicznej oraz instalacji sieci teletechnicznych w systemie EIB. W ramach naszych usług zajmujemy się również projektowaniem sieci elektroenergetycznych niskiego oraz średniego napięcia.</p>
+    <p>W naszym dorobku znajduje się projektowanie oraz wykonastwo wielomilionowych inwestycji.</p>
+    <p>Jesteśmy doświadczonym i wykwalifikowanym partnerem biznesowym stawiającym w swoich usługach na nowoczesność oraz wykorzystanie najnowszych rozwiązań technicznych.</p>
+    <b>Wszędzie tam, gdzie potrzebujesz energii.</b>
+    <h2 class="subtitle">Jesteśmy blisko.</h2>
+    <p>
+        Poznaj historię naszej firmy, dowiedz się jakie mamy wartości oraz czym kierujemy się w naszej codziennej pracy
+        <a href="{{ url('about') }}">więcej &raquo;</a>
+    </p>
+    <h2 class="subtitle">Zaufanie to podstawa.</h2>
+    <p>
+        W ciągu wielu lat naszej obecności na rynku wyrobiliśmy sobie markę solidnego i godnego zaufania wykonawcy.
+        Sprawdź listę naszych klientów oraz przeczytaj referencje, jakie nam wystawili
+        <a href="{{ url('references') }}">więcej &raquo;</a>
+    </p>
+{% endblock %}
 
+{% block js %}
     <script type="text/javascript">
         $(window).load(function () {
-            $('#slider').nivoSlider();
+            $('#index__slider').nivoSlider();
         });
     </script>
-    <div class="srodek">
-        <div class="glowna">
-            <div class="naglowek">
-                <h2 id="naglowek">
-                    ELPEX - wszędzie tam, gdzie potrzebujesz energii.</h2>
-            </div>
-            <p>
-                Firma Elpex rozpoczęła swoją działalność w 1999 roku i od tego czasu zajmuje się profesjonalnym wykonawstwem
-                robót elektroenergetycznych w obiektach mieszkalnych, przemysłowych, handlowych i pozostałych budynkach
-                użyteczności publicznej oraz instalacji sieci teletechnicznych w systemie EIB. W ramach naszych usług
-                zajmujemy się również projektowaniem sieci elektroenergetycznych niskiego oraz średniego napięcia.
-                <br/><br/>
-                W naszym dorobku znajduje się projektowanie oraz wykonastwo wielomilionowych inwestycji.
-                <br/><br/>
-                Jesteśmy doświadczonym i wykwalifikowanym partnerem biznesowym stawiającym w swoich usługach na nowoczesność
-                oraz wykorzystanie najnowszych rozwiązań technicznych.
-                <br/><br/>
-                <b>Wszędzie tam, gdzie potrzebujesz energii.</b>
-            </p>
-            <div class="podglowek">
-                <h2 id="podglowek">
-                    Jesteśmy blisko.</h2>
-            </div>
-            <p>Poznaj historię naszej firmy, dowiedz się jakie mamy wartości oraz czym kierujemy się w naszej codziennej
-                pracy <a href="o_firmie.htm">więcej &raquo;</a>
-            </p>
-            <div class="podglowek">
-                <h2 id="podglowek2">
-                    Zaufanie to podstawa.</h2>
-            </div>
-            <p>W ciągu wielu lat naszej obecności na rynku wyrobiliśmy sobie markę solidnego i godnego zaufania wykonawcy.
-                Sprawdź listę naszych klientów oraz przeczytaj referencje, jakie nam wystawili <a href="referencje.htm">więcej
-                    &raquo;</a>
-            </p>
-
-
-        </div>
-
-        <div class="prawo_1">
-            <p>
-                <a href="o_firmie.htm"><b>Poznaj nas &raquo;</b></a>
-            <ul>
-                <li>jesteśmy firmą z ponad dwunastoletnim doświadczeniem na rynku</li>
-                <li>spejalizujemy się w montażu intalacji elektrycznych zarówno na małych jak i dużych budowach</li>
-                <li>posiadamy doświadczenie w obsłudze kilkumilionowych inwestycji</li>
-            </ul>
-            </p>
-        </div>
-
-        <div class="prawo_2">
-            <b>Skontaktuj się z nami</b>
-            <p>
-                Wypełnij <a href="kontakt.htm">formularz zapytania ofertowego</a> lub skontaktuj się z nami
-                bezpośrednio:<br/><br/>
-                <font id="tel">tel/fax:</font> +48 <big><big><big><font id="tel">&nbsp;41 346 43 32</font></big></big></big><br/>
-                <big>&nbsp;&nbsp;&nbsp;</big>
-                <small>&nbsp;&nbsp;</small>
-                <font id="tel">kom:</font> +48 <big><big><big><font id="tel">&nbsp;512 180 277</font></big></big></big><br/>
-                <small>&nbsp;&nbsp;</small>
-                <font id="tel">e-mail:</font><big><big><big><font id="tel">&nbsp;elpex@op.pl</font></big></big></big><br/>
-            </p>
-        </div>
-
-        <div class="prawo_3">
-            Zapraszamy również do odwiedzenia naszego biura mieszczącego się w <font id="czarny">Kielcach</font>, ulica
-            <font id="czarny">Romualda Mielczarskiego 121</font> (zachodnia strona dworca kolejowego), II piętro, lokal 214.<br/><br/>
-            <a href="kontakt.htm">Zobacz mapę dojazdu &raquo;</a>
-        </div>
-        <br style="clear: both;"/>
-    </div>
 {% endblock %}
