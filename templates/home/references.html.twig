@@ -11,14 +11,6 @@
 {% endblock %}
 
 {% block aside %}
-    <section class="reference__section__text">
-        {% for reference in references %}
-            <section class="reference__text {% if reference.id == 1 %}reference-active{% endif %}">
-                <h4>{{ reference.title }}</h4>
-                <p>{{ reference.description|raw }}</p>
-            </section>
-        {% endfor %}
-    </section>
     <section class="reference__section__button">
         {% for reference in references %}
             <button class="reference-button {% if reference.id == 1 %}reference-button-active{% endif %}" data-id="{{ reference.id }}"><span>{{ reference.number }}<sub>{{ reference.subNumber }}</sub></span></button>
@@ -31,16 +23,13 @@
         const referenceButtons = document.querySelectorAll('.reference-button');
 
         const referenceImgs = document.querySelectorAll('.reference__img');
-        const referenceTexts = document.querySelectorAll('.reference__text');
 
         referenceButtons.forEach(referenceButton => {
             referenceButton.addEventListener('click', () => {
                 referenceImgs.forEach(reference => reference.classList.remove('reference-active'));
-                referenceTexts.forEach(reference => reference.classList.remove('reference-active'));
                 referenceButtons.forEach(item => item.classList.remove('reference-button-active'));
 
                 referenceImgs[referenceButton.getAttribute('data-id') - 1].classList.toggle('reference-active');
-                referenceTexts[referenceButton.getAttribute('data-id') - 1].classList.toggle('reference-active');
                 referenceButton.classList.toggle('reference-button-active');
             });
         });

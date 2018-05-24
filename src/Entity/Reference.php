@@ -36,11 +36,6 @@ class Reference
     private $title;
 
     /**
-     * @ORM\Column(type="text")
-     */
-    private $description;
-
-    /**
      * @ORM\Column(type="integer")
      */
     private $number;
@@ -83,16 +78,6 @@ class Reference
     public function setTitle(string $title): void
     {
         $this->title = $title;
-    }
-
-    public function getDescription(): ?string
-    {
-        return $this->description;
-    }
-
-    public function setDescription(string $description): void
-    {
-        $this->description = $description;
     }
 
     public function getNumber(): ?int

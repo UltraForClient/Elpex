@@ -13,9 +13,10 @@
 .reference-button {
     margin: 5px;
     border: 1px solid #e40001;
-    width: 10%;
-    height: 30px;
+    width: 20%;
+    height: 50px;
     color: #e40001;
+    font-size: 1.2rem;
     transition: all .2s linear;
 }
 
@@ -26,4 +27,9 @@
 
 .reference__section__text {
     height: 40vh;
+}
+@media (min-width: 786px) {
+    .reference__section__button {
+        text-align: center;
+    }
 }

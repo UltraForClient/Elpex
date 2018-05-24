@@ -36,7 +36,7 @@ class HomeController extends Controller
     public function offers(): Response
     {
         return $this->render('home/offers.html.twig', [
-            'title' => 'Oferty',
+            'title' => 'Oferta',
         ]);
     }
 
